@@ -1,4 +1,4 @@
-baseURL = "https://sap-cx-blog.pages.dev/"
+baseURL = "https://chriszhangrui.github.io/sap-cx-blog/"
 locale = "zh-CN"
 defaultContentLanguage = "zh"
 title = "Chris的CX边栏"
