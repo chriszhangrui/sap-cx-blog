@@ -3,7 +3,8 @@ locale = "zh-CN"
 defaultContentLanguage = "zh"
 title = "Chris的CX边栏"
 theme = "PaperMod"
-paginate = 10
+[pagination]
+  pagerSize = 10
 
 [params]
   author = "Chris"
