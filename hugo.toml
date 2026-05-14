@@ -1,0 +1,40 @@
+baseURL = "https://sap-cx-blog.pages.dev/"
+locale = "zh-CN"
+defaultContentLanguage = "zh"
+title = "Chris的CX边栏"
+theme = "PaperMod"
+paginate = 10
+
+[params]
+  author = "Chris"
+  description = "SAP CX 领域的观察、案例与实操经验"
+  env = "production"
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  defaultTheme = "auto"
+  DateFormat = "2006-01-02"
+
+  [params.homeInfoParams]
+    Title = "Chris的CX边栏"
+    Content = "SAP CX 售前顾问，十多年 CRM 从业经验。这里记录我对 SAP Customer Experience、Business AI、数据云的观察和思考。"
+
+  [[params.socialIcons]]
+    name = "wechat"
+    url = "#"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    style = "dracula"
+
+[sitemap]
+  changeFreq = "weekly"
+  priority = 0.5

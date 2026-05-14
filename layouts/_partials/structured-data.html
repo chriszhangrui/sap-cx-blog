@@ -1,0 +1,27 @@
+{{ if .IsPage }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "{{ .Title }}",
+  "description": "{{ .Description }}",
+  "datePublished": "{{ .PublishDate.Format "2006-01-02T15:04:05+08:00" }}",
+  "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05+08:00" }}",
+  "author": {
+    "@type": "Person",
+    "name": "Chris",
+    "jobTitle": "SAP CX 售前顾问"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Chris的CX边栏"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ .Permalink }}"
+  },
+  "inLanguage": "zh-CN",
+  "keywords": [{{ range $i, $tag := .Params.tags }}{{ if $i }},{{ end }}"{{ $tag }}"{{ end }}]
+}
+</script>
+{{ end }}
